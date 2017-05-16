@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib;
+namespace Core;
 
 use Clickatell\Api\ClickatellHttp as Clickatel;
 use \Exception;
@@ -46,7 +46,7 @@ class SMS {
     $this->SMS = new Clickatel($username, $passphrase, $api_id);
     $this->to = $to;
     $this->message = $msg;
-    $this->log_path = __DIR__ . '/logs/'; /* CAN BE CHANGED TO ANY DISIRED LOCATION */
+    $this->log_path = __DIR__ . '/../logs/'; /* CAN BE CHANGED TO ANY DISIRED LOCATION */
   }
 
   public function sed_sms_message() {

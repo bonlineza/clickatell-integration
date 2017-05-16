@@ -8,4 +8,4 @@ vendor/
 secrets.json
 
 # Ignore log files
-lib/logs/*.log
+logs/*.log

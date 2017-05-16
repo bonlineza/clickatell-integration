@@ -3,7 +3,7 @@
       "classmap": [
       ],
       "psr-4": {
-        "Lib\\":"lib/"
+        "Core\\":"core/"
       },
       "files": [
       ]
