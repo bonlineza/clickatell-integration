@@ -1,0 +1,11 @@
+# Ignore sys files
+.DS_STORE
+
+# Ignore built files
+vendor/
+
+# Ignore secrets file
+secrets.json
+
+# Ignore log files
+lib/logs/*.log
