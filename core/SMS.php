@@ -28,7 +28,11 @@ class SMS {
 
   function __construct($to=null, $msg=null) {
     $secrets_str = file_get_contents(__DIR__ . '/../secrets.json');
-    $secrets_json = json_decode($secrets_str);
+		try {
+						$secrets_json = json_decode($secrets_str);
+		} catch (Exception $e) {
+						throw new Error($e);
+		}
     // ERROR HANDLING
     if ($secrets_json === NULL) {
       throw new Exception('Error Reading Secrets Files!');
